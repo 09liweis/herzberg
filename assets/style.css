@@ -114,6 +114,9 @@ p {
 #welcome .inline-block {
     width: 49.5%;
 }
+.features {
+    margin-top: 60px;
+}
 .features .col {
     width: 33.3333%;
 }
