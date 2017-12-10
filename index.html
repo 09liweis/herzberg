@@ -3,12 +3,15 @@
     <head>
         <title>Herzberg Project</title>
         <meta charset="utf8">
-        <link rel="stylesheet" href="assets/style.css?v=1.0.2" type="text/css" />
+        <link rel="stylesheet" href="assets/style.css?v=1.0.8" type="text/css" />
     </head>
     <body>
         <div class="container">
             <header id="header">
-                <a id="logo">Howdi</a>
+                <div id="logo">
+                    <img class="inline-block" src="assets/images/logo.png" alt="logo" />
+                    <a class="inline-block" id="logo__title" href="/">Howdi</a>
+                </div>
                 <nav id="nav">
                     <a class="nav__menu" href="#">How it work</a>
                     <a class="nav__menu" href="#">About</a>
@@ -21,20 +24,28 @@
                     <div class="inline-block">
                         <h1>Howdi, welcome to the neighbourhood!</h1>
                         <p>You’re neighbourhood is waiting to get to know you better. Sign up today and get involved!</p>
-                        <a class="button" href="#">sign up</a>
+                        <a class="button button-signup" href="#">sign up</a>
                     </div>
                     <div class="inline-block">
                         <img src="assets/images/welcome.png" class="img-responsive" />
                     </div>
                 </section>
                 <section class="section">
-                    <h2>Keep the conversation going!</h2>
-                    <p>With howdi, you can always find a way to keep the conversation going.</p>
+                    <h2 class="text-center">Keep the conversation going!</h2>
+                    <p class="text-center">With howdi, you can always find a way to keep the conversation going.</p>
                     <div class="features cols">
                         <div class="col">
+                            <div class="feature feature-selected">
+                                <h3 class="feature__title">Lorem ipsum</h3>
+                                <p class="feature__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
                             <div class="feature">
-                                <h3>Lorem ipsum</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <h3 class="feature__title">Lorem ipsum</h3>
+                                <p class="feature__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="feature">
+                                <h3 class="feature__title">Lorem ipsum</h3>
+                                <p class="feature__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                         </div>
                         <div class="col text-center">
@@ -42,13 +53,49 @@
                         </div>
                         <div class="col">
                             <div class="feature">
-                                <h3>Lorem ipsum</h3>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <h3 class="feature__title">Lorem ipsum</h3>
+                                <p class="feature__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="feature">
+                                <h3 class="feature__title">Lorem ipsum</h3>
+                                <p class="feature__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                            <div class="feature">
+                                <h3 class="feature__title">Lorem ipsum</h3>
+                                <p class="feature__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                         </div>
                     </div>
                 </section>
+                <section class="section" id="students">
+                    <div class="inline-block">
+                        <img src="assets/images/students.png" class="img-responsive" />
+                    </div>
+                    <div class="inline-block right-container">
+                        <h1>For Students, by students</h1>
+                        <p>Our platform is built with a key ingredient in mind: the students. We want to make sure you have the best experience while enjoying the best time of your life.</p>
+                    </div>
+                </section>
+                <section class="section" id="signup">
+                    <div class="inline-block">
+                        <h1>Ready to meet your neighborhood?</h1>
+                        <p>Sign up today and join our beta!</p>
+                        <div class="input-form">
+                            <label class="label">EMAIL</label>
+                            <div class="input-group">
+                                <input class="input input-bar" type="email" name="email" />
+                                <a class="input input-btn">></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline-block">
+                        <img src="assets/images/twophones.png" class="img-responsive" />
+                    </div>
+                </section>
             </main>
+            <footer id="footer">
+                Herzberg Labs &copy; Copyright 2017 | Made with Heart in Toronto
+            </footer>
         </div>
     </body>
 </html>

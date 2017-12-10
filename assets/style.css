@@ -1,11 +1,44 @@
+@font-face {
+    font-family: HKGroteskMedium;
+    src: url('./fonts/hk-grotesk/HKGrotesk-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: HKGroteskBold;
+    font-weight: bold;
+    src: url('./fonts/hk-grotesk/HKGrotesk-Bold.otf') format('opentype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: sans-serif;
+    font-family: HKGroteskMedium, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: HKGroteskBold, sans-serif;
+    margin: 0;
+    font-weight: normal;
+}
+h1 {
+    font-size: 55px;
+}
+p {
+    color: #A0A0A0;
+    line-height: 24px;
 }
 .text-center {
     text-align: center;
+}
+.section {
+    margin-top: 60px;
+}
+.section .inline-block {
+    padding: 0 50px;
 }
 .container {
     max-width: 1200px;
@@ -28,6 +61,17 @@ html, body {
 #logo {
     float: left;
 }
+#logo img {
+    width: 20px;
+}
+#logo__title {
+    margin-left: 15px;
+    color: #686868;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: HKGroteskBold, sans-serif;
+}
 #nav {
     float: right;
 }
@@ -48,6 +92,9 @@ html, body {
     background-color: #C4C4C4;
     color: #FFFFFF;
     padding: 10px 20px;
+}
+.button-signup {
+    background-color: #4EC675;
 }
 .cols {
     display: -webkit-inline-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -70,8 +117,59 @@ html, body {
 .features .col {
     width: 33.3333%;
 }
-
+.feature {
+    padding: 20px;
+    margin: 0 auto 20px;
+    width: 60%;
+}
+.feature:hover {
+    background-color: #fafafa;
+}
+.feature-selected {
+    background-color: #fafafa;
+}
+.feature__title {
+    font-size: 14px;
+}
+.feature__description {
+    font-size: 14px;
+    line-height: 20px;
+}
+#students .inline-block {
+    width: 49%;
+}
+#students .right-container {
+    padding: 60px;
+}
+#signup .inline-block {
+    width: 49%;
+}
 form {
     max-width: 414px;
     margin: auto;
+}
+.input-form .label {
+    font-size: 12px;
+}
+.input-group {
+    display: flex;
+}
+.input {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+}
+.input-bar {
+    width: 300px;
+}
+.input-btn {
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #50C878;
+}
+#footer {
+    text-align: center;
+    margin: 40px 0;
+    color: #676F75;
+    font-family: Helvetica, sans-serif;
 }
